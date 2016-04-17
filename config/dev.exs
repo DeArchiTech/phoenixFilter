@@ -35,8 +35,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :blunt_api, BluntApi.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "myapp",
+  password: "password1",
   database: "blunt_api_dev",
   hostname: "localhost",
   pool_size: 10

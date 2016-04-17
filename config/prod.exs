@@ -62,4 +62,16 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
-import_config "prod.secret.exs"
+
+# your version control system.
+config :blunt_api, BluntApi.Endpoint,
+  secret_key_base: "bmuVyYK+Tubogvd8z0oiAoa93hdof536s2rGpBmigwSDYAANSh936GoO3wJL7um0"
+
+# Configure your database
+config :blunt_api, BluntApi.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "myapp",
+  password: "password1",
+  database: "blunt_api_prod",
+  pool_size: 20
+
