@@ -1,4 +1,4 @@
-# BluntApi
+# Blunt Api
 
 To start your Phoenix app:
 
